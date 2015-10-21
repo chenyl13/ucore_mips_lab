@@ -1,8 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{noithesis}
 \LoadClass[12pt, a4paper]{article}
 \RequirePackage{enumerate}
-%\RequirePackage{graphicx,subfigure}
 \RequirePackage{amsmath,amsthm,amsfonts,amssymb,bm}
 \RequirePackage{txfonts}
 \RequirePackage{CJK,ctex}
@@ -89,50 +87,9 @@
  \vskip 1em
 }
 
-\renewenvironment{abstract}{
-\noindent
-\footnotesize
-\textbf{摘~~~要}:
-\song
-}{}
-\newenvironment{keywords}{
-\noindent
-\footnotesize
-\textbf{关键字}:
-\song
-}{}
-\renewcommand\refname{参考文献}
-\renewcommand\proofname{\textbf{证明}}
-\renewcommand\figurename{图}
-\renewenvironment{proof}[1][\proofname]{\par
-  \pushQED{\qed}%
-  \normalfont \topsep6\p@\@plus6\p@\relax
-  \trivlist
-  \item[\hskip\labelsep
-  #1\@addpunct{:}]\ignorespaces
-}{\popQED\endtrivlist\@endpefalse}
-
-\newenvironment{solve}[1][解]{\par
-  \pushQED{\qed}%
-  \normalfont \topsep6\p@\@plus6\p@\relax
-  \trivlist
-  \item[\hskip\labelsep
-  #1\@addpunct{:}]\ignorespaces
-}{\popQED\endtrivlist\@endpefalse}
-
-
 \renewcommand\tableofcontents{%
   \section*{目~~录}
   \@starttoc{toc}\normalsize}
-
-\theoremstyle{definition}
-\newtheorem{definition}{定义}
-\newtheorem{example}{例}
-
-\theoremstyle{plain}
-\newtheorem{theorem}{定理}
-\newtheorem{lemma}{引理}
-\newtheorem{corollary}{推论}
 
 \renewcommand\section{\@startsection{section}{1}{\z@}%
                      {-24bp \@plus -1ex \@minus -.2ex}%

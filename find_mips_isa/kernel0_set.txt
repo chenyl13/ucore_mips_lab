@@ -1,1 +1,0 @@
-addiu andi b beqz bgtz bne bnez jal jalr jr lb li lui lw move nop ori slt sw 

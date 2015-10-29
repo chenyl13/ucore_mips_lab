@@ -1,1 +1,0 @@
-eret j mfc0 mfhi mflo mtc0 mthi mtlo nor or sllv 

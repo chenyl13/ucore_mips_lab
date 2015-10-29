@@ -1,0 +1,1 @@
+addu and beq bgez blez bltz lbu negu sb sll slti sltiu sltu sra srl subu 
